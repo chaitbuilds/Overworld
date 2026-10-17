@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "atlas_prefix": "overworld:kit/",
+  "how_to_draw": "graphics.blitSprite(RenderPipelines.GUI_TEXTURED, Identifier.fromNamespaceAndPath(\"overworld\", \"kit/<name>\"), x, y, w, h) with graphics = net.minecraft.client.gui.GuiGraphicsExtractor (Minecraft 26.3, Mojang names). Sprites with a 'slice' entry ship <name>.png.mcmeta (gui.scaling nine_slice) so vanilla nine-slices them; the rest (icons, dots, ring frames, grip, tail, checkboxes) are fixed-size and drawn at their own size.",
+  "gui_scale_note": "Sprites are authored at 1 texel = 1 GUI pixel; never scale by non-integers.",
+  "sprites": {
+    "bubble": {
+      "id": "overworld:kit/bubble",
+      "size": [
+        16,
+        16
+      ],
+      "note": "Speech bubble body (billboard). Draw bubble_tail centred under it.",
+      "slice": {
+        "left": 5,
+        "top": 5,
+        "right": 5,
+        "bottom": 5
+      },
+      "scaling": "nine_slice",
+      "content_padding": {
+        "left": 6,
+        "top": 4,
+        "right": 6,
+        "bottom": 5
+      },
+      "text_color": "#1F1E1D"
+    },
+    "bubble_tail": {
+      "id": "overworld:kit/bubble_tail",
+      "size": [
+        9,
+        5
+      ],
+      "note": "Speech bubble tail; overlap its first row with the bubble's bottom border."
+    },
+    "dot_done": {
+      "id": "overworld:kit/dot_done",
+      "size": [
+        7,
+        7
+      ],
+      "note": "Status dot: done #8FA98B"
+    },
+    "dot_done_halo": {
+      "id": "overworld:kit/dot_done_halo",
+      "size": [
+        11,
+        11
+      ],
+      "note": "Status dot with halo (animate alpha for pulsing): done"
+    },
+    "dot_error": {
+      "id": "overworld:kit/dot_error",
+      "size": [
+        7,
+        7
+      ],
+      "note": "Status dot: error #C2413B"
+    },
+    "dot_error_halo": {
+      "id": "overworld:kit/dot_error_halo",
+      "size": [
+        11,
+        11
+      ],
+      "note": "Status dot with halo (animate alpha for pulsing): error"
+    },
+    "dot_idle": {
+      "id": "overworld:kit/dot_idle",
+      "size": [
+        7,
+        7
+      ],
+      "note": "Status dot: idle #9C9488"
+    },
+    "dot_idle_halo": {
+      "id": "overworld:kit/dot_idle_halo",
+      "size": [
+        11,
+        11
+      ],
+      "note": "Status dot with halo (animate alpha for pulsing): idle"
+    },
+    "dot_thinking": {
+      "id": "overworld:kit/dot_thinking",
+      "size": [
+        7,
+        7
+      ],
+      "note": "Status dot: thinking #C9A227"
+    },
+    "dot_thinking_halo": {
+      "id": "overworld:kit/dot_thinking_halo",
+      "size": [
+        11,
+        11
+      ],
+      "note": "Status dot with halo (animate alpha for pulsing): thinking"
+    },
+    "dot_waiting": {
+      "id": "overworld:kit/dot_waiting",
+      "size": [
+        7,
+        7
+      ],
+      "note": "Status dot: waiting #D97757"
+    },
+    "dot_waiting_halo": {
+      "id": "overworld:kit/dot_waiting_halo",
+      "size": [
+        11,
+        11
+      ],
+      "note": "Status dot with halo (animate alpha for pulsing): waiting"
+    },
+    "dot_working": {
+      "id": "overworld:kit/dot_working",
+      "size": [
+        7,
+        7
+      ],
+      "note": "Status dot: working #2FA3A0"
+    },
+    "dot_working_halo": {
+      "id": "overworld:kit/dot_working_halo",
+      "size": [
+        11,
+        11
+      ],
+      "note": "Status dot with halo (animate alpha for pulsing): working"
+    },
+    "nameplate": {
+      "id": "overworld:kit/nameplate",
+      "size": [
+        16,
+        12
+      ],
+      "note": "In-world nameplate pill (translucent ink, alpha 220 so names keep >= 4.5:1 even over a bright wall).",
+      "slice": {
+        "left": 3,
+        "top": 3,
+        "right": 3,
+        "bottom": 3
+      },
+      "scaling": "nine_slice",
+      "content_padding": {
+        "left": 4,
+        "top": 2,
+        "right": 4,
+        "bottom": 1
+      },
+      "text_color": "#F4EFE6"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+node_modules/
+mod/build/
+mod/.gradle/
+mod/run/
+.gradle/
+.idea/
+*.log
+.DS_Store

@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "overworld",
+	"version": "${version}",
+	"name": "Overworld",
+	"description": "Your codebase as a town. Ask for a change at a building and watch AI agents build it.",
+	"license": "MIT",
+	"icon": "assets/overworld/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.overworld.Overworld"
+		],
+		"client": [
+			"dev.overworld.client.OverworldClient"
+		]
+	},
+	"mixins": [
+		"overworld.mixins.json",
+		{
+			"config": "overworld.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
